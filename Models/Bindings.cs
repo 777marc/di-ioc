@@ -8,6 +8,7 @@ namespace di_ioc.Models
         public override void Load()
         {
             Bind<IMailSender>().To<MailSender>();
+            Bind<ILogger>().To<Logger>();
         }
     }
 }
